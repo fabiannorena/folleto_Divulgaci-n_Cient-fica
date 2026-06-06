@@ -1,0 +1,224 @@
+
+<style>
+  .folleto { font-family: var(--font-sans); max-width: 680px; margin: 0 auto; }
+  .header { background: #185FA5; color: #E6F1FB; padding: 2rem 2rem 1.5rem; border-radius: var(--border-radius-lg) var(--border-radius-lg) 0 0; position: relative; overflow: hidden; }
+  .header::after { content: ''; position: absolute; bottom: -30px; right: -30px; width: 120px; height: 120px; border-radius: 50%; background: #378ADD; opacity: 0.3; }
+  .header::before { content: ''; position: absolute; top: -20px; left: 60%; width: 80px; height: 80px; border-radius: 50%; background: #0C447C; opacity: 0.4; }
+  .header-tag { font-size: 11px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: #85B7EB; margin-bottom: 0.5rem; }
+  .header h1 { font-size: 26px; font-weight: 500; margin: 0 0 0.4rem; color: #E6F1FB; line-height: 1.2; }
+  .header p { font-size: 13px; color: #B5D4F4; margin: 0; }
+  .body { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-top: none; border-radius: 0 0 var(--border-radius-lg) var(--border-radius-lg); padding: 0; }
+  .section { padding: 1.5rem 2rem; border-bottom: 0.5px solid var(--color-border-tertiary); }
+  .section:last-child { border-bottom: none; }
+  .section-header { display: flex; align-items: center; gap: 10px; margin-bottom: 1rem; }
+  .section-icon { width: 32px; height: 32px; border-radius: var(--border-radius-md); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .icon-blue { background: #E6F1FB; color: #185FA5; }
+  .icon-teal { background: #E1F5EE; color: #0F6E56; }
+  .icon-amber { background: #FAEEDA; color: #854F0B; }
+  .icon-coral { background: #FAECE7; color: #993C1D; }
+  .section-title { font-size: 15px; font-weight: 500; color: var(--color-text-primary); }
+  .section p { font-size: 13.5px; color: var(--color-text-secondary); line-height: 1.7; margin: 0 0 0.75rem; }
+  .section p:last-child { margin-bottom: 0; }
+  .pill-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 0.75rem; }
+  .pill { font-size: 12px; padding: 4px 10px; border-radius: 999px; font-weight: 500; }
+  .pill-blue { background: #E6F1FB; color: #0C447C; }
+  .pill-teal { background: #E1F5EE; color: #085041; }
+  .pill-amber { background: #FAEEDA; color: #633806; }
+  .pill-coral { background: #FAECE7; color: #712B13; }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .mini-card { background: var(--color-background-secondary); border-radius: var(--border-radius-md); padding: 1rem; }
+  .mini-card-label { font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-text-tertiary); margin-bottom: 0.5rem; }
+  .mini-card-items { font-size: 13px; color: var(--color-text-secondary); line-height: 1.8; }
+  .ethics-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; margin-top: 0.75rem; }
+  .eth-item { background: var(--color-background-secondary); border-radius: var(--border-radius-md); padding: 0.75rem; text-align: center; }
+  .eth-item i { font-size: 20px; color: #185FA5; display: block; margin-bottom: 6px; }
+  .eth-item span { font-size: 12px; color: var(--color-text-secondary); line-height: 1.4; }
+  .footer { background: #0C447C; border-radius: 0 0 var(--border-radius-lg) var(--border-radius-lg); padding: 1rem 2rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+  .footer-text { font-size: 12px; color: #85B7EB; line-height: 1.6; }
+  .footer-refs { font-size: 11px; color: #B5D4F4; }
+  .divider-label { font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-text-tertiary); margin-bottom: 0.75rem; }
+  .highlight-box { border-left: 3px solid #378ADD; background: #E6F1FB; padding: 0.75rem 1rem; border-radius: 0 var(--border-radius-md) var(--border-radius-md) 0; margin: 0.75rem 0; }
+  .highlight-box p { color: #0C447C !important; font-size: 13px !important; margin: 0 !important; }
+  @media (max-width: 480px) { .two-col { grid-template-columns: 1fr; } .ethics-grid { grid-template-columns: repeat(2,1fr); } }
+</style>
+
+<div class="folleto">
+  <div class="header">
+    <div class="header-tag">Competencias Investigativas</div>
+    <h1>Divulgación Científica<br>y Ética en Investigación</h1>
+    <p>Aspectos esenciales para el investigador responsable</p>
+  </div>
+
+  <div class="body">
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon icon-blue"><i class="ti ti-broadcast" aria-hidden="true" style="font-size:18px;"></i></div>
+        <div class="section-title">¿Qué es la divulgación científica?</div>
+      </div>
+      <p>La divulgación científica es el proceso de comunicar el conocimiento científico a públicos no especializados, utilizando un lenguaje accesible y claro. Su objetivo es tender puentes entre la ciencia y la sociedad, promoviendo la <strong>alfabetización científica</strong> ciudadana.</p>
+      <div class="highlight-box"><p>Según Olmedo (2011), la divulgación busca acercar la ciencia a la comunidad general, transformando conceptos complejos en información comprensible y significativa para la vida cotidiana.</p></div>
+      <p>Existen diferentes niveles: divulgación para el gran público, educación científica formal e informal, y comunicación entre pares académicos.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon icon-teal"><i class="ti ti-checklist" aria-hidden="true" style="font-size:18px;"></i></div>
+        <div class="section-title">Aspectos a tener en cuenta al divulgar</div>
+      </div>
+      <div class="two-col">
+        <div class="mini-card">
+          <div class="mini-card-label">Antes de divulgar</div>
+          <div class="mini-card-items">
+            ✔ Conocer al público objetivo<br>
+            ✔ Verificar la veracidad de los datos<br>
+            ✔ Elegir el medio adecuado<br>
+            ✔ Usar lenguaje claro y simple
+          </div>
+        </div>
+        <div class="mini-card">
+          <div class="mini-card-label">Durante el proceso</div>
+          <div class="mini-card-items">
+            ✔ Citar fuentes correctamente<br>
+            ✔ Evitar sensacionalismo<br>
+            ✔ Respetar derechos de autor<br>
+            ✔ Contextualizar los hallazgos
+          </div>
+        </div>
+      </div>
+      <div class="pill-list" style="margin-top:1rem;">
+        <span class="pill pill-teal">Responsabilidad social</span>
+        <span class="pill pill-teal">Rigor científico</span>
+        <span class="pill pill-teal">Accesibilidad del lenguaje</span>
+        <span class="pill pill-teal">Impacto comunitario</span>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon icon-amber"><i class="ti ti-link" aria-hidden="true" style="font-size:18px;"></i></div>
+        <div class="section-title">Relación: divulgación científica y ética</div>
+      </div>
+      <p>La ética y la divulgación están íntimamente ligadas. El investigador tiene la responsabilidad de comunicar sus hallazgos con veracidad, evitando manipulaciones que puedan afectar a comunidades o individuos. Martínez Morales (2008) señala que el investigador debe considerar el impacto social de sus publicaciones.</p>
+      <div class="ethics-grid">
+        <div class="eth-item">
+          <i class="ti ti-eye-check" aria-hidden="true"></i>
+          <span>Transparencia en los resultados</span>
+        </div>
+        <div class="eth-item">
+          <i class="ti ti-users" aria-hidden="true"></i>
+          <span>Respeto a las comunidades</span>
+        </div>
+        <div class="eth-item">
+          <i class="ti ti-shield-check" aria-hidden="true"></i>
+          <span>Prevención del fraude científico</span>
+        </div>
+        <div class="eth-item">
+          <i class="ti ti-certificate" aria-hidden="true"></i>
+          <span>Reconocimiento de autoría</span>
+        </div>
+        <div class="eth-item">
+          <i class="ti ti-flag" aria-hidden="true"></i>
+          <span>Declaración de conflictos de interés</span>
+        </div>
+        <div class="eth-item">
+          <i class="ti ti-repeat" aria-hidden="true"></i>
+          <span>Replicabilidad del estudio</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon icon-coral"><i class="ti ti-article" aria-hidden="true" style="font-size:18px;"></i></div>
+        <div class="section-title">Aspectos clave en una publicación científica</div>
+      </div>
+      <p>Espinoza (2019) identifica consideraciones éticas fundamentales que deben regir el proceso de publicación científica para garantizar su validez e integridad.</p>
+      <div class="two-col">
+        <div>
+          <div class="divider-label">Estructura del artículo</div>
+          <div class="mini-card">
+            <div class="mini-card-items">
+              📄 Resumen (abstract)<br>
+              📌 Introducción<br>
+              🔬 Metodología<br>
+              📊 Resultados<br>
+              💬 Discusión y conclusiones<br>
+              🙏 Agradecimientos<br>
+              📚 Referencias bibliográficas
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="divider-label">Principios éticos</div>
+          <div class="mini-card">
+            <div class="mini-card-items">
+              ✅ Autoría legítima (CREdiT)<br>
+              ✅ Originalidad del manuscrito<br>
+              ✅ Sin plagio ni fabricación de datos<br>
+              ✅ Revisión por pares (peer review)<br>
+              ✅ Declaración de financiamiento<br>
+              ✅ Normas APA o Vancouver<br>
+              ✅ Uso de software antiplagio
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon icon-blue"><i class="ti ti-database" aria-hidden="true" style="font-size:18px;"></i></div>
+        <div class="section-title">Portales, revistas y bases de datos científicas</div>
+      </div>
+      <div class="two-col">
+        <div>
+          <div class="divider-label">Bases de datos académicas</div>
+          <div class="pill-list" style="margin-top:0;">
+            <span class="pill pill-blue">Scopus</span>
+            <span class="pill pill-blue">Web of Science</span>
+            <span class="pill pill-blue">PubMed</span>
+            <span class="pill pill-blue">SciELO</span>
+            <span class="pill pill-blue">EBSCO</span>
+            <span class="pill pill-blue">ProQuest</span>
+            <span class="pill pill-blue">Redalyc</span>
+            <span class="pill pill-blue">Dialnet</span>
+          </div>
+        </div>
+        <div>
+          <div class="divider-label">Portales científicos reconocidos</div>
+          <div class="pill-list" style="margin-top:0;">
+            <span class="pill pill-coral">Google Scholar</span>
+            <span class="pill pill-coral">ResearchGate</span>
+            <span class="pill pill-coral">Academia.edu</span>
+            <span class="pill pill-coral">DOAJ</span>
+            <span class="pill pill-coral">Elsevier</span>
+            <span class="pill pill-coral">SpringerLink</span>
+          </div>
+        </div>
+      </div>
+      <p style="margin-top:1rem; font-size:12.5px;">Accede a las bases de datos de la Universidad Iberoamericana en: <a href="https://basedatos.ibero.edu.co/subjects/databases.php" style="color:#185FA5;">basedatos.ibero.edu.co</a></p>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <div class="footer-text">
+      <strong style="color:#E6F1FB; font-size:13px;">Referencias bibliográficas</strong><br>
+      <span class="footer-refs">
+        Espinoza, D.M. (2019). Rev. Médica Clínica Las Condes, 30(3), 226–230.<br>
+        Martínez Morales, M. (2008). La Ciencia y El Hombre, 21(1).<br>
+        Olmedo Estrada, J.C. (2011). Revista Eureka, 8(2), 134–141.
+      </span>
+    </div>
+    <div style="text-align:right; flex-shrink:0;">
+	   <strong style="color:#E6F1FB; font-size:13px;">Fabian Ignacio Noreña Gutierrez</strong><br>
+      <br>	  
+      <div style="font-size:11px; color:#85B7EB;">Competencias investigativas</div>
+	  <div style="font-size:11px; color:#85B7EB;">CAMPO CASTILLO 23022026_C12_202631</div>
+	  <div style="font-size:11px; color:#85B7EB;">Universidad Iberoamericana</div>
+	  
+</div>
+    </div>
+  </div>
+</div>
